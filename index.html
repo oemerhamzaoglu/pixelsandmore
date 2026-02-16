@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixels &amp; More – Datenschutzerklärung</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #0a0a1a;
+            color: #ccc;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #00ffff;
+            font-size: 1.8em;
+            margin-bottom: 8px;
+            font-family: monospace;
+        }
+        .brand {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #fff;
+            font-size: 1.2em;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+        p { margin-bottom: 16px; }
+        a { color: #00cccc; }
+        .app-list {
+            background: #12122a;
+            border-left: 3px solid #00ffff;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+        .app-list strong { color: #fff; }
+        .footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #222;
+            color: #666;
+            font-size: 0.85em;
+        }
+        .lang-switch {
+            margin-bottom: 30px;
+        }
+        .lang-switch a {
+            display: inline-block;
+            padding: 6px 16px;
+            margin-right: 8px;
+            border: 1px solid #333;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .lang-switch a.active {
+            border-color: #00ffff;
+            color: #00ffff;
+        }
+        .en { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pixels &amp; More</h1>
+        <p class="brand">Indie Game Studio</p>
+
+        <div class="lang-switch">
+            <a href="#" class="active" onclick="showLang('de'); return false;">Deutsch</a>
+            <a href="#" onclick="showLang('en'); return false;">English</a>
+        </div>
+
+        <!-- DEUTSCH -->
+        <div class="de">
+            <h2>Datenschutzerklärung</h2>
+            <p>Diese Datenschutzerklärung gilt für alle Apps und Spiele, die unter dem Namen „Pixels &amp; More" veröffentlicht werden.</p>
+
+            <div class="app-list">
+                <strong>Betroffene Apps:</strong><br>
+                Pixel Racer (und zukünftige Veröffentlichungen)
+            </div>
+
+            <h2>Welche Daten werden erhoben?</h2>
+            <p>Keine. Unsere Apps erheben, speichern und übertragen keine personenbezogenen Daten. Es werden keine Analyse-Tools, Tracking-Dienste oder Werbe-SDKs eingesetzt.</p>
+
+            <h2>Lokale Speicherung</h2>
+            <p>Spielstände, Einstellungen und Bestzeiten werden ausschließlich lokal auf Ihrem Gerät gespeichert. Diese Daten verlassen Ihr Gerät nicht und werden nicht an Dritte übermittelt.</p>
+
+            <h2>Internetverbindung</h2>
+            <p>Unsere Apps benötigen keine Internetverbindung und sind vollständig offline nutzbar.</p>
+
+            <h2>Kinder</h2>
+            <p>Unsere Apps sind für alle Altersgruppen geeignet und erheben keinerlei Daten von Kindern oder anderen Nutzern.</p>
+
+            <h2>Änderungen</h2>
+            <p>Sollte sich diese Datenschutzerklärung ändern, wird die aktualisierte Version auf dieser Seite veröffentlicht.</p>
+
+            <h2>Kontakt</h2>
+            <p>Bei Fragen zum Datenschutz erreichen Sie uns unter:<br>
+            <a href="https://buymeacoffee.com/pixelsandmore">buymeacoffee.com/pixelsandmore</a></p>
+        </div>
+
+        <!-- ENGLISH -->
+        <div class="en">
+            <h2>Privacy Policy</h2>
+            <p>This privacy policy applies to all apps and games published under the name "Pixels &amp; More".</p>
+
+            <div class="app-list">
+                <strong>Affected apps:</strong><br>
+                Pixel Racer (and future releases)
+            </div>
+
+            <h2>What data is collected?</h2>
+            <p>None. Our apps do not collect, store or transmit any personal data. No analytics tools, tracking services or advertising SDKs are used.</p>
+
+            <h2>Local storage</h2>
+            <p>Game saves, settings and best times are stored exclusively on your device. This data never leaves your device and is not shared with third parties.</p>
+
+            <h2>Internet connection</h2>
+            <p>Our apps do not require an internet connection and are fully usable offline.</p>
+
+            <h2>Children</h2>
+            <p>Our apps are suitable for all age groups and do not collect any data from children or other users.</p>
+
+            <h2>Changes</h2>
+            <p>If this privacy policy changes, the updated version will be published on this page.</p>
+
+            <h2>Contact</h2>
+            <p>For privacy-related questions, please contact us at:<br>
+            <a href="https://buymeacoffee.com/pixelsandmore">buymeacoffee.com/pixelsandmore</a></p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Pixels &amp; More. Letzte Aktualisierung: Februar 2026.</p>
+        </div>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.querySelector('.de').style.display = lang === 'de' ? 'block' : 'none';
+            document.querySelector('.en').style.display = lang === 'en' ? 'block' : 'none';
+            document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
